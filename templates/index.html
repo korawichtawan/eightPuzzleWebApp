@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>8 Puzzle Solver</title>
+        <style>
+            body {
+                background-color: rgb(199, 239, 226);
+                text-align: center;
+            }
+            .cell {
+                width: 6%;
+            }
+            #error {
+                color: rgb(232, 63, 63);
+            }
+            table {
+                margin-left: auto;
+                margin-right: auto;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="puzzle">
+            <h1 id="header">8 Puzzle Solver</h1>
+
+            <form action="/" method="POST">
+                <input type="text" class="cell" id="cell0" name="cell0">
+                <input type="text" class="cell" id="cell1" name="cell1">
+                <input type="text" class="cell" id="cell2" name="cell2">
+                <br><br>
+                <input type="text" class="cell" id="cell3" name="cell3">
+                <input type="text" class="cell" id="cell4" name="cell4">
+                <input type="text" class="cell" id="cell5" name="cell5">
+                <br><br>
+                <input type="text" class="cell" id="cell6" name="cell6">
+                <input type="text" class="cell" id="cell7" name="cell7">
+                <input type="text" class="cell" id="cell8" name="cell8">
+                <br><br>
+                <input class="button" type="submit" value="Submit">
+                <br>
+            </form> 
+        </div>
+
+        <div class="answer">
+            <table>
+                <tr>
+                    <td>{{.cell0}}</td>
+                    <td>{{.cell1}}</td>
+                    <td>{{.cell2}}</td>
+                </tr>
+                <tr>
+                    <td>{{.cell3}}</td>
+                    <td>{{.cell4}}</td>
+                    <td>{{.cell5}}</td>
+                  </tr>
+                <tr>
+                    <td>{{.cell6}}</td>
+                    <td>{{.cell7}}</td>
+                    <td>{{.cell8}}</td>
+                </tr>
+              </table>
+            <h4 id="error">{{.err}}</h4>
+            <h4>{{.minMove}}</h4>
+            <h4 id="answer">{{.answer}}</h4>
+        </div>
+    </body>
+</html>

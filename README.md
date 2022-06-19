@@ -14,7 +14,7 @@ go run main.go
 Go to localhost:8080<br /><br />
 <img src="https://github.com/korawichtawan/eightPuzzleWebApp/blob/main/firstpage.JPG" width=20% height=20%>
 <br />
-Edit puzzle.<br /><br />
+Edit puzzle (fill empty hole with zero).<br /><br />
 <img src="https://github.com/korawichtawan/eightPuzzleWebApp/blob/main/editPuzzle.JPG" width=20% height=20%>
 <br />
 Click "Submit" button.<br /><br />
